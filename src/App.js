@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import 'modern-normalize/modern-normalize.css';
+import './styles/App.css';
+import Profile from './components/Profile';
+import Statistic from './components/Statistics';
+import FriendsList from './components/FriendsList';
+import user from './user.json';
+import statistical from './statistical-data.json';
+import friends from './friends.json';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+const App = () => (
+  <>
+    <Profile user={user} />
+    <Statistic statistical={statistical} />
+    <FriendsList friends={friends} />
+  </>
+);
 export default App;
