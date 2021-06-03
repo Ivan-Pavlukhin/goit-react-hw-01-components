@@ -1,0 +1,36 @@
+.transaction__history {
+  width: 720px;
+  text-align: center;
+  background-color: rgb(219, 230, 230);
+  border-radius: 4px;
+  margin-bottom: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.transaction__head {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #ffffff;
+  background-color: rgb(43, 107, 160);
+}
+
+.transaction__item {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(110, 114, 114);
+}
+
+.transaction__item,
+.transaction__th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.transaction__tr:nth-child(even) {
+  background-color: rgb(202, 196, 196);
+}
+
+.transaction__tr:nth-child(odd) {
+  background-color: #ffffff;
+}
