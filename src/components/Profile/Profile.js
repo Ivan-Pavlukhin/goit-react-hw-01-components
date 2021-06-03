@@ -1,11 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import styles from './profile.module.css';
+import styles from "./profile.module.css";
 
 const Profile = ({ user }) => (
   <div className={styles.profile}>
-    {console.log(user.name)}
     <div className={styles.description}>
       <img
         className={styles.avatar}
@@ -46,9 +45,9 @@ Profile.propTypes = {
           followers: PropTypes.number.isRequired,
           views: PropTypes.number.isRequired,
           likes: PropTypes.number.isRequired,
-        }),
+        })
       ).isRequired,
-    }),
+    })
   ).isRequired,
 };
 
