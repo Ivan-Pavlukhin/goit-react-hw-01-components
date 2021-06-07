@@ -16,7 +16,7 @@ import styles from "./App.module.css";
 const App = () => (
   <div className={styles.wrapper}>
     <Profile user={user} />
-    <Statistic statistical={statistical} title={"Upload stats"} />
+    <Statistic statistical={statistical} title="Upload stats" />
     <FriendsList friends={friends} />
     <Transactions transactionsData={transactionsData} />
   </div>
